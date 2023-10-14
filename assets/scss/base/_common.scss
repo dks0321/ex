@@ -1,0 +1,26 @@
+/* 공통소스 */
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    margin: -1px;
+}
+
+h2{
+    &.title {display: block;font-size: 24px;font-weight: 500;}
+}
+.wrapper{
+    min-width: 1300px;
+    margin: 0 auto;
+}
+
+@keyframes rotating {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
